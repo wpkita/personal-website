@@ -1,1 +1,1 @@
-[wpkita.com](wpkita.com)
+[wpkita.com](http://wpkita.com)
