@@ -39,3 +39,7 @@ body, .wk-tile {
     padding: .2em .25em .15em;
     background-color: #333;
 }
+
+.wk-tile:hover {
+    background-color: #222;
+}
