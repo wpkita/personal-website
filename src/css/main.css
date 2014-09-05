@@ -18,6 +18,10 @@ body, .wk-tile {
     color: #f0f1f1;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wk-tiles {
     position: absolute;
     top: 50%;
