@@ -1,22 +1,26 @@
 module.exports = function(grunt) {
     grunt.initConfig({
+        config: {
+            src: 'src',
+            dist: 'dist'
+        },
         pkg: grunt.file.readJSON('package.json'),
         clean: {
             dist: {
-                src: ['dist/**/*'],
+                src: ['<%= config.dist %>/**/*'],
                 filter: 'isFile'
             }
         },
         copy: {
             dist: {
-                src: 'src/index.html',
-                dest: 'dist/index.html'
+                src: '<%= config.src %>/index.html',
+                dest: '<%= config.dist %>/index.html'
             }
         },
         cssmin: {
             dist: {
-                src: 'src/css/main.css',
-                dest: 'dist/css/main.css'
+                src: '<%= config.src %>/css/main.css',
+                dest: '<%= config.dist %>/css/main.css'
             }
         }
     });
