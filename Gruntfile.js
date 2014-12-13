@@ -24,7 +24,6 @@ module.exports = function(grunt) {
                     }
                 ]
             }
-                
         },
         cssmin: {
             dist: {
