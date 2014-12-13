@@ -13,9 +13,18 @@ module.exports = function(grunt) {
         },
         copy: {
             dist: {
-                src: '<%= config.src %>/index.html',
-                dest: '<%= config.dist %>/index.html'
+                files: [
+                    {
+                        src: '<%= config.src %>/favicon.ico',
+                        dest: '<%= config.dist %>/favicon.ico'
+                    },
+                    {
+                        src: '<%= config.src %>/index.html',
+                        dest: '<%= config.dist %>/index.html'
+                    }
+                ]
             }
+                
         },
         cssmin: {
             dist: {
