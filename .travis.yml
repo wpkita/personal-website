@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+    - "0.10"
+before_install:
+    - "npm install -g grunt-cli"
+install:
+    - "npm install"
+before_script:
+    - "grunt"
+deploy:
+    provider: s3
+    access_key_id: $AWS_ACCESS_KEY # declared in Travis repo settings
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: wpkita.com
+    endpoint: wpkita.com.s3-website-us-east-1.amazonaws.com
+    region: us-west-2
+    skip_cleanup: true
+    local-dir: dist
+    acl: public_read
+    detect_encoding: true
+notifications:
+    email:
+        on_failure: always
+        
