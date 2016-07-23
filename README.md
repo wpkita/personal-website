@@ -6,7 +6,3 @@ Build
 -----
 1. `npm install`
 2. `grunt`
-
-Deploy
-------
-1. `grunt s3`
