@@ -1,16 +1,15 @@
 language: node_js
 node_js:
-    - "6"
+  - "6"
 before_script:
-    - "npm install -g gulp-cli"
+  - "npm install -g gulp-cli"
 script:
-    - "gulp"
+  - "gulp"
 deploy:
-    provider: s3
-    access_key_id: $AWS_ACCESS_KEY # declared in Travis repo settings
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: $AWS_BUCKET
-    region: $AWS_REGION
-notifications:
-    email:
-      on_failure: always
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: $AWS_BUCKET
+  region: $AWS_REGION
+  skip_cleanup: true
+  local_dir: dist
