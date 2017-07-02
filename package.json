@@ -1,4 +1,11 @@
 {
+  "name": "wpkita.com",
+  "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wpkita/wpkita.com.git"
+  },
+  "homepage": "https://www.wpkita.com",
   "devDependencies": {
     "apache-server-configs": "^2.14.0",
     "babel-core": "^6.14.0",
