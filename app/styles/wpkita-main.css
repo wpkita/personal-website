@@ -34,9 +34,16 @@ a {
 }
 
 .wk-name {
-    line-height: 3em;
+    line-height: 2em;
     font-size: 1.5em;
     font-weight: 300;
+}
+
+.wk-title {
+  line-height: 2em;
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
+  font-weight: 300;
 }
 
 .wk-tile {
