@@ -1,10 +1,6 @@
 language: node_js
 node_js:
-  - "6"
-before_script:
-  - "npm install -g gulp-cli"
-script:
-  - "gulp"
+  - "8"
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
@@ -12,4 +8,4 @@ deploy:
   bucket: $AWS_BUCKET
   region: $AWS_REGION
   skip_cleanup: true
-  local_dir: dist
+  local_dir: app
