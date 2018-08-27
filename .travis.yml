@@ -9,3 +9,5 @@ deploy:
   region: $AWS_REGION
   skip_cleanup: true
   local_dir: app
+notifications:
+  email: false
