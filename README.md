@@ -1,15 +1,12 @@
 # Personal Website
 
-![Travis](https://travis-ci.org/wpkita/personal-website.svg?branch=master)
-
 ## Build
 
-No buld necessary. I _could_ set up minification, but that'd be overkill for these tiny files.
+No build necessary. I _could_ set up minification, but that'd be overkill for these tiny files.
 
-## Deployment Notes
+## Deployment
 
-* Deployment is handled via TravisCI.
-* CloudFront invalidation is handled through AWS Lambda
+- `firebase deploy`
 
 ## Browse
 
