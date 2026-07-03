@@ -1,5 +1,13 @@
 # Refine Done
 
+### Harden firebase.json hosting config
+
+- type: feature
+- impact: low — nice-to-have
+- effort: small
+- notes: —
+- resolution: Added `cleanUrls: true`, security headers on all responses (X-Content-Type-Options: nosniff, X-Frame-Options: DENY, Referrer-Policy: strict-origin-when-cross-origin), and a 1-day Cache-Control for css/ico/txt assets (deliberately modest — assets aren't content-hashed, so a year-long cache would strand updates; Firebase's default is 1 hour). JSON validated locally; firebase CLI not installed in this environment, so the config takes effect on the next `firebase deploy`. Completed 2026-07-03.
+
 ### Clean remaining boilerplate leftovers
 
 - type: feature
