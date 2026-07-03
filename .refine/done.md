@@ -1,5 +1,13 @@
 # Refine Done
 
+### Brand the 404 page
+
+- type: feature
+- impact: low-medium — `app/404.html` was untouched Firebase CLI boilerplate with no link back home and none of the site's styling
+- effort: small
+- notes: —
+- resolution: Rewrote 404.html to match the site: #4a4e4d background, same system font stack and light-weight centered headings as index, a "Back to williamkita.com" tile-style link to `/`, plus `noindex` meta. Styles are inlined so the page has zero dependencies (works even if the CSS path itself 404s). Verified via headless-Chrome screenshot. Completed 2026-07-03.
+
 ### Delete stale .travis.yml (contradicts Firebase deployment)
 
 - type: bug
