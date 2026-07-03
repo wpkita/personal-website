@@ -1,5 +1,13 @@
 # Refine Done
 
+### Update domain references from wpkita.com to williamkita.com
+
+- type: bug
+- impact: medium — user reports the site's new domain is https://www.williamkita.com; README's "Browse" link and package.json's `homepage`/`name` still said wpkita.com
+- effort: small
+- notes: User-added item (2026-07-03).
+- resolution: Updated README.md browse link and package.json `name`/`homepage` to williamkita.com. Also fixed package.json `repository.url`: the GitHub API 301s wpkita.com.git to its renamed home, wpkita/personal-website. Left unchanged: the GitHub/LinkedIn profile links (wpkita is the account handle, not the domain), the `styles/wpkita-main.css` filename (renaming would churn a cached URL for zero user value), and .firebaserc/firebase.json (custom domains live in the Firebase console, not the repo). Completed 2026-07-03.
+
 ### Modernize Google Analytics: legacy analytics.js → gtag.js (GA4)
 
 - type: bug

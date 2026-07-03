@@ -1,10 +1,10 @@
 {
-  "name": "wpkita.com",
+  "name": "williamkita.com",
   "version": "0.3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wpkita/wpkita.com.git"
+    "url": "https://github.com/wpkita/personal-website.git"
   },
-  "homepage": "https://www.wpkita.com",
+  "homepage": "https://www.williamkita.com",
   "private": true
 }

@@ -10,4 +10,4 @@ No build necessary. I _could_ set up minification, but that'd be overkill for th
 
 ## Browse
 
-[https://www.wpkita.com/](https://www.wpkita.com/)
+[https://www.williamkita.com/](https://www.williamkita.com/)

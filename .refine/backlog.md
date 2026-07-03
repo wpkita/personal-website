@@ -2,13 +2,6 @@
 
 Priority order = file order. See `.claude/skills/refine` for process.
 
-### Update domain references from wpkita.com to williamkita.com
-
-- type: bug
-- impact: medium — user reports the site's new domain is https://www.williamkita.com; README's "Browse" link and package.json's `homepage`/`name` still say wpkita.com, pointing readers at the old domain
-- effort: small
-- notes: User-added item (2026-07-03). Update `README.md` browse link and `package.json` `homepage` and `name`. Leave the GitHub `repository.url` unless the repo is confirmed renamed. Check `.firebaserc`/`firebase.json` for anything domain-specific (likely none — Firebase custom domains are configured in the console).
-
 ### Replace Font Awesome CDN icons with inline SVGs
 
 - type: feature
