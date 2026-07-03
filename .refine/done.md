@@ -1,5 +1,13 @@
 # Refine Done
 
+### Replace Font Awesome CDN icons with inline SVGs
+
+- type: feature
+- impact: medium — the two icon links ARE the site's content; they depended on Font Awesome 4.2.0 from maxcdn.bootstrapcdn.com, a deprecated legacy CDN host and single point of failure
+- effort: small
+- notes: See backlog history for full context.
+- resolution: Replaced both `<i class="fa ...">` icons with inline SVGs — GitHub Octicon mark (MIT) and Font Awesome Free linkedin-in glyph (CC BY 4.0, attribution kept as HTML comments) — and removed the font-awesome CDN stylesheet. `.wk-tile` now sizes the SVGs (4em box, currentColor fill), preserving the white-icon-on-#333-tile look. Verified via headless-Chrome screenshot: rendering matches the original design. The page now makes no third-party requests except gtag.js. Completed 2026-07-03.
+
 ### Update domain references from wpkita.com to williamkita.com
 
 - type: bug

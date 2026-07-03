@@ -46,8 +46,11 @@ a {
 }
 
 .wk-tile {
-  padding: .2em .25em .15em;
+  width: 4em;
+  height: 4em;
+  padding: .6em .75em .45em;
   background-color: #333;
+  fill: currentColor;
 }
 
 .wk-tile:hover {

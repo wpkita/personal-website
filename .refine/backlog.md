@@ -2,13 +2,6 @@
 
 Priority order = file order. See `.claude/skills/refine` for process.
 
-### Replace Font Awesome CDN icons with inline SVGs
-
-- type: feature
-- impact: medium — the two icon links ARE the site's content; they depend on Font Awesome 4.2.0 served from maxcdn.bootstrapcdn.com, a deprecated legacy CDN host (StackPath/MaxCDN shut down; the hostname works today via redirect sponsorship but is a single point of failure). Inlining SVGs removes the render-blocking external stylesheet entirely.
-- effort: small
-- notes: Replace the two `<i class="fa fa-github/fa-linkedin">` elements in `app/index.html` with inline SVG icons (GitHub octocat mark, LinkedIn logo — both simple single-path SVGs), sized ~3em to match `fa-3x`. Drop the font-awesome `<link>`. Keep the `.wk-tile` styling and aria-labels on the anchors.
-
 ### Delete stale .travis.yml (contradicts Firebase deployment)
 
 - type: bug
