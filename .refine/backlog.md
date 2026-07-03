@@ -2,13 +2,6 @@
 
 Priority order = file order. See `.claude/skills/refine` for process.
 
-### Delete stale .travis.yml (contradicts Firebase deployment)
-
-- type: bug
-- impact: medium-low — doc/config drift: `.travis.yml` deploys `app/` to S3, but the README and firebase.json say the site deploys via `firebase deploy` (commit 582b5df "Link firebase"). travis-ci.org itself is defunct. Misleading to any reader.
-- effort: small
-- notes: `git rm .travis.yml`. Nothing references it.
-
 ### Brand the 404 page
 
 - type: feature

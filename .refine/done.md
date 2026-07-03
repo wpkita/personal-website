@@ -1,5 +1,13 @@
 # Refine Done
 
+### Delete stale .travis.yml (contradicts Firebase deployment)
+
+- type: bug
+- impact: medium-low — config drift: `.travis.yml` deployed `app/` to S3, but the site deploys via `firebase deploy` per README/firebase.json; travis-ci.org is defunct
+- effort: small
+- notes: Nothing referenced it.
+- resolution: `git rm .travis.yml`. The Firebase workflow in the README is the single documented deployment path now. Completed 2026-07-03.
+
 ### Replace Font Awesome CDN icons with inline SVGs
 
 - type: feature
