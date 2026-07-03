@@ -2,12 +2,12 @@
 
 Priority order = file order. See `.claude/skills/refine` for process.
 
-### Remove dead Google Analytics (Universal Analytics) snippet
+### Update domain references from wpkita.com to williamkita.com
 
 - type: bug
-- impact: medium — UA stopped processing data July 2023, so the inline snippet (index.html:33-57) loads a third-party script and sends events nowhere; dead code plus a wasted request
+- impact: medium — user reports the site's new domain is https://www.williamkita.com; README's "Browse" link and package.json's `homepage`/`name` still say wpkita.com, pointing readers at the old domain
 - effort: small
-- notes: Delete the whole GA block and its "change UA-XXXXX-X" comment. Do not migrate to GA4 unattended — that needs a real measurement ID from the user; note it in done.md as a follow-up they can request.
+- notes: User-added item (2026-07-03). Update `README.md` browse link and `package.json` `homepage` and `name`. Leave the GitHub `repository.url` unless the repo is confirmed renamed. Check `.firebaserc`/`firebase.json` for anything domain-specific (likely none — Firebase custom domains are configured in the console).
 
 ### Replace Font Awesome CDN icons with inline SVGs
 
