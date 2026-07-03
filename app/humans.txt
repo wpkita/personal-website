@@ -3,11 +3,7 @@
 
 # TEAM
 
-  <name> -- <role> -- <twitter>
-
-# THANKS
-
-  <name>
+  William Kita -- Senior Software Engineer -- github.com/wpkita
 
 # TECHNOLOGY COLOPHON
 

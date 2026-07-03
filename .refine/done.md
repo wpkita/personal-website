@@ -1,5 +1,13 @@
 # Refine Done
 
+### Clean remaining boilerplate leftovers
+
+- type: feature
+- impact: low — polish only
+- effort: small
+- notes: —
+- resolution: Filled humans.txt TEAM with William Kita / Senior Software Engineer / github.com/wpkita and dropped the empty THANKS placeholder. Removed Web Starter Kit template noise from index.html: "Add your site or app content here", the SEO canonical comment block, the "Built with love" footer comment, and the obsolete X-UA-Compatible IE=edge meta. Completed 2026-07-03.
+
 ### Brand the 404 page
 
 - type: feature
